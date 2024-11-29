@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "WNAS9J4967.com.winnie.userapp",
+        "paths": ["/*"]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": ["WNAS9J4967.com.winnie.userapp"]
+  },
+  "webcredentials": {
+    "apps": ["WNAS9J4967.com.winnie.userapp"]
+  }
+}
