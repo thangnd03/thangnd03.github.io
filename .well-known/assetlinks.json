@@ -8,15 +8,5 @@
         "FB:CF:33:E5:3F:FA:42:0F:91:D2:1D:F1:3B:C2:A1:BE:B6:5C:3D:31:76:F2:D3:3F:58:CF:C7:47:5D:AB:6B:E3"
       ]
     }
-  },
-    {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "My Winnie",
-      "package_name": "com.winnie.userapp",
-      "sha256_cert_fingerprints": [
-        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
-      ]
-    }
   }
 ]
