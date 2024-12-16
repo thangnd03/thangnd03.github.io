@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open App or Redirect</title>
+</head>
+<body>
+    <script>
+        function openAppWithFallback(appUrl, iosStoreUrl, androidStoreUrl) {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Try to open the app
+            window.location.href = appUrl;
+
+            // If the app doesn't open, redirect to the appropriate store
+            setTimeout(() => {
+                if (/android/i.test(userAgent)) {
+                    // Redirect to Google Play on Android
+                    window.location.href = androidStoreUrl;
+                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    // Redirect to App Store on iOS
+                    window.location.href = iosStoreUrl;
+                } else {
+                    console.log("Unsupported platform or unable to redirect.");
+                }
+            }, 2000); // Wait 2 seconds to see if the app opens
+        }
+
+        // Auto-call the function when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            openAppWithFallback(
+                "winnie://", // App URL scheme
+                "https://apps.apple.com/app/id6737789682", // iOS App Store link
+                "https://play.google.com/store/apps/details?id=com.winnie.userapp" // Google Play link
+            );
+        });
+    </script>
+</body>
+</html>
