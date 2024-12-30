@@ -36,7 +36,7 @@
                     window.location.href = androidStoreUrl;
                 } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                     // Redirect to App Store on iOS
-                    window.location.href = iosStoreUrl;
+                    window.location.href = "com.winnie.userapp://vendor/1";
                 } else {
                     window.location.href = appUrl
                 }
