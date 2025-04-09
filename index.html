@@ -31,16 +31,16 @@
 
             // If the app doesn't open, redirect to the appropriate store
             // setTimeout(() => {
-                if (/android/i.test(userAgent)) {
-                    // Redirect to Google Play on Android
-                    window.location.href = androidStoreUrl;
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                    // Redirect to App Store on iOS
-                    window.location.href = "winnie://vendor/26b686c3-ad1d-4b33-9ac0-9fda2cf29eb0?isShare=1 ";
-                } else {
-                    window.location.href = appUrl
-                }
+                // if (/android/i.test(userAgent)) {
+                //     // Redirect to Google Play on Android
+                //     window.location.href = androidStoreUrl;
+                // } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                //     // Redirect to App Store on iOS
+                //     window.location.href = "winnie://vendor/26b686c3-ad1d-4b33-9ac0-9fda2cf29eb0?isShare=1 ";
+                // } else {
+                // }
             // }, 2000); // Wait 2 seconds to see if the app opens
+                    window.location.href = appUrl
         }
 
         // Auto-call the function when the page loads
