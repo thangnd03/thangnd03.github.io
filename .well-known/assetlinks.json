@@ -1,11 +1,30 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.winnie.userapp",
       "sha256_cert_fingerprints": [
-        "FB:CF:33:E5:3F:FA:42:0F:91:D2:1D:F1:3B:C2:A1:BE:B6:5C:3D:31:76:F2:D3:3F:58:CF:C7:47:5D:AB:6B:E3"
+        "71:13:69:F1:34:88:6D:F6:22:B6:15:88:E7:08:F4:8C:79:82:C3:A0:F9:78:09:9A:EF:14:81:F0:EF:A0:11:36",
+        "FB:CF:33:E5:3F:FA:42:0F:91:D2:1D:F1:3B:C2:A1:BE:B6:5C:3D:31:76:F2:D3:3F:58:CF:C7:47:5D:AB:6B:E3",
+        "6F:0C:3B:37:50:92:B2:47:1A:77:6F:4C:27:66:76:6E:32:59:AC:50:C1:41:46:39:84:11:82:D5:6D:2D:D1:F0",
+        "49:B1:BD:1F:EE:A8:72:82:30:51:37:1B:93:2D:60:AF:91:23:7C:9E:13:94:BD:A5:7A:25:75:83:D6:CC:01:F5"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.winnie.userapp.v1",
+      "sha256_cert_fingerprints": [
+        "FB:CF:33:E5:3F:FA:42:0F:91:D2:1D:F1:3B:C2:A1:BE:B6:5C:3D:31:76:F2:D3:3F:58:CF:C7:47:5D:AB:6B:E3",
+        "49:B1:BD:1F:EE:A8:72:82:30:51:37:1B:93:2D:60:AF:91:23:7C:9E:13:94:BD:A5:7A:25:75:83:D6:CC:01:F5"
       ]
     }
   }
