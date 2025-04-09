@@ -44,27 +44,13 @@
         }
 
         // Auto-call the function when the page loads
-        // document.addEventListener("DOMContentLoaded", () => {
-        //     openAppWithFallback(
-        //         "winnie://", // App URL scheme
-        //         "https://apps.apple.com/app/id6737789682", // iOS App Store link
-        //         "https://play.google.com/store/apps/details?id=com.winnie.userapp" // Google Play link
-        //     );
-        // });
-        const a = async() => {
-try{
-const relatedApps = await navigator.getInstalledRelatedApps();
-
-// Dump all the returned related apps into a table in the console
-console.log(relatedApps);
-document.getElementById("a").innerHTML = JSON.stringify(relatedApps);
-}catch(error){
-console.log(error)
-    document.getElementById("a").innerHTML = JSON.stringify(error);
-}
-
-}
-a()
+        document.addEventListener("DOMContentLoaded", () => {
+            openAppWithFallback(
+                "winnie://", // App URL scheme
+                "https://apps.apple.com/app/id6737789682", // iOS App Store link
+                "https://play.google.com/store/apps/details?id=com.winnie.userapp" // Google Play link
+            );
+        });
     </script>
 </body>
 
